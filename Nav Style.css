@@ -14,10 +14,10 @@ header{
     width: 100%;
     height: 96px;
     justify-content: space-between;
-    
     align-items: center;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.2);
+    padding: 30px ;
+    position: fixed;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.2));
 }
 .logo{
     font-size: 30px;
@@ -31,6 +31,8 @@ nav li{
     list-style: none;
     padding: 0px 20px;
     float: left;
+    font-family: "Neue Helvetica";
+    font-size: 12px;
 }
 a,button{
     font-size: 16px;
@@ -41,16 +43,16 @@ a,button{
 }
 button{
     background: rgba(0, 0, 0, 0.2);
-    border: 2px solid #ffcc33;
+    border: 2px solid grey;
     border-radius: 50px;
     padding: 9px 25px;
 }
 nav li a:hover{
-    color:  #ffcc33;
+    color:  grey;
     transition: all 0.3s ease 0s;
 }
 button:hover{
-    background-color: #ffcc33;
+    background-color: grey;
     transition: all 0.3s ease 0s;
     
 }
@@ -58,3 +60,21 @@ ul{
     margin: 0;
     padding: 0;
 }
+.vertical {
+    border-left: 1.5px solid white;
+    height: 60px;
+    position: absolute;
+    left: 10%;
+    border-radius: 5px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 600px;
+
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+  }
