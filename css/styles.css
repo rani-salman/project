@@ -15,7 +15,17 @@ header{
     align-items: center;
     padding-left: 30px ;
     position: fixed;
-    background-image: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.2));
+    background-image: linear-gradient(180deg, rgba(0,0,0,10), rgba(0,0,0,0.6));
+    z-index: 999999;
+}
+/* .navbar{
+    margin-top: 10px;
+} */
+.nav-barr{
+    margin-top: 10px;
+}
+.nav-barr a{
+    color: white !important;
 }
 #logo{
     font-size: 30px;
@@ -492,8 +502,18 @@ line-height: 1.3333333333em;
 
 
 }
+.nav-barr .loginbutton{
+    background: rgba(0, 0, 0, 0.2); 
+    padding: 9px 25px;
+    margin-left: 50%;
+    position: relative;
 
-
+}
+.nav-barr .loginbutton:hover{
+    background-color: grey;
+    transition: all 0.3s ease 0s;
+    
+}
 
 
   
