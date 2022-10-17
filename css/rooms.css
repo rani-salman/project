@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+.roomTitle{
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    margin:0;
+    padding: 0;
+    top:0;
+}
+.roomTitle h3{
+    color:white;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Monotype Garamond, Garamond, serif; 
+    text-align: center;
+    margin-top:0;
+}
+.roomTitle p{
+    color: white;
+    font-size: 32px;
+    line-height: 42px; 
+    font-family:Neue Helvetica, helvetica, sans-serif;
+    text-align: center;
+}
+.RoomImage{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    height: fill;
+}
+.breif{
+    position: relative;
+    height: 180px;
+    width: 100%;
+    background-color: black;
+    margin:0;
+    padding: 50px 0px;
+    top:-10px;
+}
+.breif p{
+    color:white;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: Monotype Garamond, Garamond, serif; 
+    text-align: center;
+    margin-top:0;
+}
+.breif .book{
+    background: rgba(255, 255, 255, 1); 
+    padding: 9px 25px;
+    position: absolute;
+    left: 50%;
+
+}
+.breif .book:hover{
+    background-color: grey;
+    transition: all 0.3s ease 0s;
+    
+}
+.detailsTitle p{
+    text-align: center;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: Neue Helvetica, helvetica, sans-serif;
+    color: black;
+    font-weight: 200;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    height: 120px;
+    
+    
+}
+.column1 {
+    float: left;
+    width: 40%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    height: fit-content;
+    
+}
+hr{
+    background-color: black;
+    width: 400px;
+    float: left;
+    
+}
+.Column1 .Column2, h2{
+    font-family: Neue Helvetica, helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: left;
+    
+}
+.Column1 .Column2, p{
+    font-family: Neue Helvetica, helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+#RoomImage{
+    width: 30px !important;
+    height: 30px;
+    margin-top: 10px !important;
+    margin-right: 15px !important;
+}
+.titles{
+    margin-top: 10px;
+    justify-content: left;
+    display: inline-flex;
+    align-items: left;
+    box-sizing: border-box;
+    padding-left: 0px; 
+    text-align: left;
+    justify-content: left;
+}
