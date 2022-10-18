@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    color:black;
+    text-align: center;
+    font-family: "Century Gothic",SANS-SERIF;
+    /* font-weight: 10;
+    font-size: 2em;
+    line-height: 1.4; */
+    text-transform: uppercase;
+    letter-spacing: 3.76px;
+}
+.payments-page{
+    display: flex;
+    align-items: center;
+    
+
+}
+.payments-page .form,.image{
+    width: 50%;
+}
+.payments-page .image img{
+        width: 100%;
+        height: 100%;
+}
+.payments-page .row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+}
+.payments-page .row input{
+    margin: 5px 0;
+}
+.payments-page .row .fill{
+    width: 75%;
+    height: 40px;
+    border: transparent;
+    border-bottom: 1px solid black;
+  }
+  .payments-page .form .card-types{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .payments-page .form .date{
+    display: flex;
+    
+  }
+  .payments-page .form button{
+    margin-top: 10px;
+    background-color: white;
+   color: black;
+   border: 1px solid black;
+   padding: 15px;
+  }
+  .payments-page .form button:hover{
+    background-color: black;
+    color: white;
+   
+  }
+  
+  /* .payments-page .username{
+    
+  } */
+ 
+/* .payments-page h1{
+    text-align: center;
+} */
