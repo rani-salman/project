@@ -55,6 +55,81 @@ body {
     text-align: left;
   }
 }
+.home i {
+  cursor: pointer;
+}
+.home .addstaff-body,.add-task-form {
+  border: 2px solid black;
+  width: 50%;
+  display: none;
+}
+.home  .form h1 {
+  text-align: center;
+}
+.home  .form .row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+}
+.home .addstaff-body .form .row input {
+  margin: 5px 0;
+}
+.home .addstaff-body .form .row select {
+  margin: 5px 0;
+}
+.home  .form .row .fill {
+  width: 75%;
+  height: 40px;
+  border: transparent;
+  border-bottom: 1px solid black;
+}
+.home  .form button {
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 15px;
+}
+.home  .form button:hover {
+  background-color: black;
+  color: white;
+}
+#staff-table button{
+  /* margin-top: 10px; */
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  
+}
+#staff-table button:hover{
+  background-color: black;
+  color: white;
+}
+/* .home .add-task-form{
+  border: 2px solid black;
+  width: 50%;
+  display: none;
+} */
+/* .home .addstaff-body .form button:hover {
+  background-color: black;
+  color: white;
+} */
+.home .form #lastrow {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .add-staff-style,.add-task-style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  display: block;
+}
 .home .title {
   margin: 10px 0px;
   text-align: center;
@@ -186,7 +261,8 @@ body {
 .home .Grid__Container .rooms-booked,
 .home .Grid__Container .pending-requests,
 .home .Grid__Container .rooms-status,
-.home .Grid__Container .staff-information {
+.home .Grid__Container .staff-information,
+.home .Grid__Container .tasks {
   grid-column-start: 1;
   grid-column-end: 5;
   height: 160px;
@@ -238,7 +314,8 @@ body {
 .home .Grid__Container .rooms-booked,
 .home .Grid__Container .pending-requests,
 .home .Grid__Container .staff-information,
-.home .Grid__Container .rooms-status {
+.home .Grid__Container .rooms-status,
+.home .Grid__Container .tasks {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -297,68 +374,4 @@ body {
 .home .Grid__Container .tables #color-brown {
     background-color: brown;
   }
-}
-i{
-  cursor: pointer;
-}
-.addstaff-body{
-  border:2px solid black;
-  width: 50%;
-  display: none;
-}
-.addstaff-body .form h1{
-  text-align: center;
-}
-.addstaff-body .form .row{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 0px;
-}
-.addstaff-body .form .row input{
-  margin: 5px 0;
-}
-.addstaff-body .form .row select{
-  margin: 5px 0;
-}
-.addstaff-body .form .row .fill{
-  width: 75%;
-  height: 40px;
-  border: transparent;
-  border-bottom: 1px solid black;
-}
-
-
-.addstaff-body .form button{
-  margin-top: 10px;
-  background-color: white;
- color: black;
- border: 1px solid black;
- padding: 15px;
-}
-.addstaff-body .form button:hover{
-  background-color: black;
-  color: white;
- 
-}
-.addstaff-body .form button:hover{
-  background-color: black;
-  color: white;
- 
-}
-.addstaff-body .form #lastrow{
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.add-staff-style{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  display: block;
-}
-
-/*# sourceMappingURL=adminstyle.css.map */
+}/*# sourceMappingURL=adminstyle.css.map */

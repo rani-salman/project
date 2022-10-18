@@ -325,6 +325,23 @@
                   <th>Current Role</th>
                   <th>address</th>
                   <th>Delete</th>
+                  <th>Assign Task</th>
+                </tr>
+              </thead>
+
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="Stat__Card tasks">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Staff Tasks</div>
+            <table class="table" id="task-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Current Task</th>
+                  <th>Due date</th>
                 </tr>
               </thead>
 
@@ -365,7 +382,6 @@
                 size="25"
                 class="fill"
                 id="staff-address"
-                s
                 required
               />
             </div>
@@ -387,6 +403,32 @@
           </form>
         </div>
       </div>
+      <div class="add-task-form" id="add-task-form">
+        <div class="form" id="form" onsubmit="return false">
+          <form action="">
+            <h1 id="task-title">Assign New Task</h1>
+            <div class="row">
+              <div class="title">Task</div>
+              <textarea class="fill" id="newTask" required></textarea>
+            </div>
+            <div class="row">
+              <div class="title">Due Date</div>
+              <input type="Date" class="fill" id="task-date" required />
+            </div>
+
+            <div class="row" id="lastrow">
+              <button id="submit-task">Add Task</button>
+              <button
+                type="button"
+                id="cancelTask"
+                onclick="cancelTaskFunction()"
+              >
+                cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <script>
@@ -395,58 +437,81 @@
         let add_staff_form = document.getElementById("addstaff-body");
         add_staff_form.classList.add("add-staff-style");
       }
+      function AddTaskDisplay(i) {
+        console.log(i);
+        document.getElementById("home").style.opacity = 0.07;
+        let add_task_form = document.getElementById("add-task-form");
+        document.getElementById("task-title").innerHTML =
+          "Assign Task to " + Staff_Array[i].name;
+        document.getElementById("submit-task").onclick = function () {
+          AddTaskFunction(i);
+        };
+        add_task_form.classList.add("add-task-style");
+      }
+      function AddTaskFunction(i) {
+        let task_description = document.getElementById("newTask").value;
+        let task_date = document.getElementById("task-date").value;
+        if (task_description !== "" && task_date !== null) {
+          Task_Array.push(new Task(Staff_Array[i], task_description));
+          let newrow = document
+            .getElementById("task-table")
+            .insertRow(Task_Array.length);
+          let cell1 = newrow.insertCell(0);
+          let cell2 = newrow.insertCell(1);
+          let cell3 = newrow.insertCell(2);
+          cell1.innerHTML = Staff_Array[i].name;
+          cell2.innerHTML = task_description;
+          cell3.innerHTML = task_date;
+          cancelTaskFunction();
+        }
+      }
       function submitFunction() {
         let name = document.getElementById("staff-name").value;
         let number = document.getElementById("staff-number").value;
         let address = document.getElementById("staff-address").value;
         let role = document.getElementById("role-form").value;
-        let newStaff = new Staff(name, number, role, address);
-        myArr.push(newStaff);
-        console.log(myArr);
-        let newrow = document
-          .getElementById("staff-table")
-          .insertRow(myArr.length);
-        let cell1 = newrow.insertCell(0);
-        let cell2 = newrow.insertCell(1);
-        let cell3 = newrow.insertCell(2);
-        let cell4 = newrow.insertCell(3);
-        let cell5 = newrow.insertCell(4);
-        console.log(role);
-        cell1.innerText = name;
-        cell2.innerText = number;
-        cell3.innerHTML = `<select name="role" id="role">
-    <option value="house_keeping">${role}</option>
-    <option value="recepcionist">${
-      role === "recepcionist" ? "house_keeping" : "recepcionist"
-    }</option>
+        if (name !== "" && (number !== "") & (address !== "") && role !== "") {
+          let newStaff = new Staff(name, number, role, address);
+          Staff_Array.push(newStaff);
+          console.log(Staff_Array);
+          let newrow = document
+            .getElementById("staff-table")
+            .insertRow(Staff_Array.length);
+          let cell1 = newrow.insertCell(0);
+          let cell2 = newrow.insertCell(1);
+          let cell3 = newrow.insertCell(2);
+          let cell4 = newrow.insertCell(3);
+          let cell5 = newrow.insertCell(4);
+          let cell6 = newrow.insertCell(5);
+          console.log(role);
+          cell1.innerText = name;
+          cell2.innerText = number;
+          cell3.innerHTML = `<select name="role" id="role">
+        <option value="house_keeping">${role}</option>
+        <option value="recepcionist">${
+          role === "recepcionist" ? "house_keeping" : "recepcionist"
+        }</option>
 
-  </select>`;
-        cell4.innerText = address;
-        cell5.innerHTML = '<i class="fa-solid fa-trash"></i>';
-        cancelFunction();
+      </select>`;
+          cell4.innerText = address;
+          cell5.innerHTML = '<i class="fa-solid fa-trash"></i>';
+          cell6.innerHTML =
+            '<button type="button" class="new-task-button">New Task</button>';
+          cancelFunction();
+          addFunctionalityButtons();
+        }
       }
-      // document
-      //   .getElementById("cancel")
-      //   .addEventListener("click", "canccel", false);
       function cancelFunction() {
         document.getElementById("home").style.opacity = 1;
         let add_staff_form = document.getElementById("addstaff-body");
+
         add_staff_form.classList.remove("add-staff-style"); //back to display none
       }
-      // document.getElementById("submit-staff").addEventListener("click",addStaff,false);
-      // function addStaff(){
-
-      // }
-      //console.log(document.getElementById("submit-staff"));
-
-      // function myFunction() {
-      //   var x = document.getElementById("myTopnav");
-      //   if (x.className === "topnav") {
-      //     x.className += " responsive";
-      //   } else {
-      //     x.className = "topnav";
-      //   }
-      // }
+      function cancelTaskFunction() {
+        document.getElementById("home").style.opacity = 1;
+        let add_task_form = document.getElementById("add-task-form");
+        add_task_form.classList.remove("add-task-style"); //back to display none
+      }
       function Staff(name, mobileNumber, role, address) {
         this.name = name;
         this.mobileNumber = mobileNumber;
@@ -454,66 +519,100 @@
         this.address = address;
         // this.task = task;
       }
-      let myArr = [
+      function Task(staff, description, dueDate) {
+        this.staff = staff;
+        this.description = description;
+        this.dueDate = dueDate;
+      }
+      let Task_Array = [];
+
+      let Staff_Array = [
         new Staff("Leonardo", "71913710", "house_keeping", "baalbeck"),
         new Staff("Ali", "71913710", "house_keeping", "baalbeck"),
         new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
-        new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
-        new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
-        new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
+        new Staff("mhamad", "71913710", "house_keeping", "baalbeck"),
+        new Staff("Rana", "71913710", "house_keeping", "baalbeck"),
+        new Staff("bilal", "71913710", "house_keeping", "baalbeck"),
       ];
-      let html_array = myArr.map(
+      for (let i = 0; i < Staff_Array.length; i++) {
+        Task_Array.push(
+          new Task(Staff_Array[i], "clean all rooms", "2022-12-2021")
+        );
+      }
+      let staff_html_array = Staff_Array.map(
         (staff) =>
           `<tr><td>${staff.name}</td><td>${
             staff.mobileNumber
           }</td><td><select name="role" id="role">
-    <option value="house_keeping">${staff.role}</option>
-    <option value="recepcionist">${
-      staff.role === "recepcionist" ? "house_keeping" : "recepcionist"
-    }</option>
+        <option value="house_keeping">${staff.role}</option>
+        <option value="recepcionist">${
+          staff.role === "recepcionist" ? "house_keeping" : "recepcionist"
+        }</option>
 
-  </select></td><td>${
-    staff.address
-  }</td><td><i class="fa-solid fa-trash"></i></td></tr>`
+      </select></td><td>${
+        staff.address
+      }</td><td><i class="fa-solid fa-trash"></i></td><td><button type="button" class="new-task-button">New Task</button></td></tr>`
       );
-      //console.log(html_array);
-      //console.log(document.querySelector("#staff-table tbody"));
+      let task_html_array = Task_Array.map(
+        (task) =>
+          `<tr><td>${task.staff.name}</td><td>${task.description}</td><td>${task.dueDate}</td></tr>`
+      );
+
       document.querySelector("#staff-table tbody").innerHTML =
-        html_array.join("");
-      // document.getElementById("icon").addEventListener("click", edit, false);
+        staff_html_array.join("");
+      document.querySelector("#task-table tbody").innerHTML =
+        task_html_array.join("");
+
       function edit(index) {
-        myArr[index].role =
+        Staff_Array[index].role =
           document.querySelector("#staff-table tbody").childNodes[
             index
           ].childNodes[2].childNodes[0].value;
 
-        console.log(myArr);
+        console.log(Staff_Array);
       }
 
-      var parent = document.querySelector("#staff-table tbody");
-      function deleteStaff(index) {
-        console.log("in");
-        myArr.splice(index, 1);
-        document.getElementById("staff-table").deleteRow(index + 1);
-        console.log(myArr);
+      function deleteStaff(e) {
+        //console.log("in");
+        //console.log(index);
+
+        console.log(e.target.parentElement.parentElement);
+        let index = e.target.parentElement.parentElement.rowIndex;
+        Staff_Array.splice(index - 1, 1);
+        document.getElementById("staff-table").deleteRow(index);
+        //newEventHandler();
+        //addFunctionalityButtons();
+        console.log(Staff_Array);
       }
-      for (let i = 0, len = parent.children.length; i < len; i++) {
-        //Role
-        parent.childNodes[i].childNodes[2].addEventListener(
-          "input",
-          function () {
-            edit(i);
-          },
-          false
-        );
-        parent.childNodes[i].childNodes[4].addEventListener(
-          "click",
-          function () {
-            deleteStaff(i);
-          },
-          false
-        );
+      function addFunctionalityButtons() {
+        //console.log("in");
+        var parent = document.querySelector("#staff-table tbody");
+        for (let i = 0, len = parent.children.length; i < len; i++) {
+          //Role
+          parent.childNodes[i].childNodes[2].addEventListener(
+            "input",
+            function () {
+              edit(i);
+            },
+            false
+          );
+          parent.childNodes[i].childNodes[4].addEventListener(
+            "click",
+
+            deleteStaff,
+            false
+          );
+          parent.childNodes[i].childNodes[5].addEventListener(
+            "click",
+            function () {
+              AddTaskDisplay(i);
+            },
+            false
+          );
+        }
       }
+
+      addFunctionalityButtons();
     </script>
   </body>
 </html>
