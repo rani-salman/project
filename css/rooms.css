@@ -68,7 +68,7 @@ body{
     font-weight: 200;
 }
 
-.column {
+/* .column {
     float: left;
     width: 40%;
     padding-left: 10%;
@@ -84,7 +84,7 @@ body{
     padding-bottom: 3%;
     height: fit-content;
     
-}
+} */
 hr{
     background-color: black;
     width: 400px;
@@ -114,11 +114,32 @@ hr{
 }
 .titles{
     margin-top: 10px;
-    justify-content: left;
-    display: inline-flex;
-    align-items: left;
-    box-sizing: border-box;
-    padding-left: 0px; 
-    text-align: left;
-    justify-content: left;
+
 }
+.all {
+    display: flex;
+    justify-content: space-evenly;
+}
+.PClass{
+    width: 100%;
+}
+.column1 , .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.all{
+    margin: 0 auto;
+}
+.column {
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+.column1{
+    margin-right: 10%;
+}
+.info {
+    border-top: 1px solid black;
+    height: 180px;
+    width: 500px;
+  }
