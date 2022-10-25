@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/adminstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/74610e28b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="home">
+      <h2 class="title">Admin DashBaord</h2>
+      <div class="Grid__Container" id="home">
+        <div class="Stat__Card">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Total Bookings</div>
+            <div class="Stat__Content">2,398</div>
+          </div>
+        </div>
+        <div class="Stat__Card">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Available Rooms</div>
+            <div class="Stat__Content">62,156</div>
+          </div>
+        </div>
+        <div class="Stat__Card">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Enquiries</div>
+            <div class="Stat__Content">122</div>
+          </div>
+        </div>
+        <div class="Stat__Card">
+          <div class="Stat__Container">
+            <div class="Stat__Title">staff number</div>
+            <div class="Stat__Content">300</div>
+          </div>
+        </div>
+        <div class="Stat__Card graph">
+          <div class="Stat__Container">
+            <div class="Stat__Title">ROOMS BOOKED</div>
+            <div id="my-pie-chart-container">
+              <div id="my-pie-chart"></div>
+              <div id="legenda">
+                <div class="entry">
+                  <div id="color-brown" class="entry-color"></div>
+                  <div class="entry-text">AC room</div>
+                </div>
+                <div class="entry">
+                  <div id="color-black" class="entry-color"></div>
+                  <div class="entry-text">Studio</div>
+                </div>
+                <div class="entry">
+                  <div id="color-blue" class="entry-color"></div>
+                  <div class="entry-text">one bed</div>
+                </div>
+                <div class="entry">
+                  <div id="color-green" class="entry-color"></div>
+                  <div class="entry-text">suite</div>
+                </div>
+                <div class="entry">
+                  <div id="color-yellow" class="entry-color"></div>
+                  <div class="entry-text">double suite</div>
+                </div>
+                <div class="entry">
+                  <div id="color-orange" class="entry-color"></div>
+                  <div class="entry-text">special</div>
+                </div>
+                <div class="entry">
+                  <div id="color-red" class="entry-color"></div>
+                  <div class="entry-text">Student</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Stat__Card tables">
+          <div class="Stat__Container">
+            <div class="Stat__Title">TABLES BOOKED</div>
+            <div id="my-pie-chart-container">
+              <div id="my-pie-chart"></div>
+              <div id="legenda">
+                <div class="entry">
+                  <div id="color-brown" class="entry-color"></div>
+                  <div class="entry-text">1 person</div>
+                </div>
+                <div class="entry">
+                  <div id="color-black" class="entry-color"></div>
+                  <div class="entry-text">2 persons</div>
+                </div>
+                <div class="entry">
+                  <div id="color-blue" class="entry-color"></div>
+                  <div class="entry-text">3 persons</div>
+                </div>
+                <div class="entry">
+                  <div id="color-green" class="entry-color"></div>
+                  <div class="entry-text">4 persons</div>
+                </div>
+                <div class="entry">
+                  <div id="color-yellow" class="entry-color"></div>
+                  <div class="entry-text">5 persons</div>
+                </div>
+                <div class="entry">
+                  <div id="color-orange" class="entry-color"></div>
+                  <div class="entry-text">6 persons</div>
+                </div>
+                <div class="entry">
+                  <div id="color-red" class="entry-color"></div>
+                  <div class="entry-text">7 persons</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Stat__Card rooms-status">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Rooms Status</div>
+            <table class="table">
+              <tr>
+                <th>Room Number</th>
+                <th>Room Type</th>
+                <th>status</th>
+              </tr>
+              <tr>
+                <td>202</td>
+
+                <td>Studio</td>
+                <td class="active-room">Active</td>
+              </tr>
+              <tr>
+                <td>202</td>
+
+                <td>Studio</td>
+                <td class="deactive-room">FREE</td>
+              </tr>
+              <tr>
+                <td>202</td>
+
+                <td>Studio</td>
+                <td class="deactive-room">FREE</td>
+              </tr>
+              <tr>
+                <td>202</td>
+
+                <td>Studio</td>
+                <td class="active-room">Active</td>
+              </tr>
+              <tr>
+                <td>202</td>
+
+                <td>Studio</td>
+                <td class="active-room">Active</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="Stat__Card rooms-booked">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Rooms Booked</div>
+            <table class="table">
+              <tr>
+                <th>Booking ID</th>
+                <th>Name</th>
+                <th>Room Type</th>
+                <th>Room Number</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+              </tr>
+              <tr>
+                <td>123-123-123</td>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+              </tr>
+              <tr>
+                <td>123-123-123</td>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+              </tr>
+              <tr>
+                <td>123-123-123</td>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+              </tr>
+              <tr>
+                <td>123-123-123</td>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+              </tr>
+              <tr>
+                <td>123-123-123</td>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="Stat__Card pending-requests">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Pending Booking Requests</div>
+            <table class="table">
+              <tr>
+                <th>Name</th>
+                <th>Room Type</th>
+                <th>Room Number</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Accept</th>
+                <th>Reject</th>
+              </tr>
+              <tr>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+                <td>
+                  <button type="button" class="accept-button">Accept</button>
+                </td>
+                <td>
+                  <button type="button" class="reject-button">reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+                <td>
+                  <button type="button" class="accept-button">Accept</button>
+                </td>
+                <td>
+                  <button type="button" class="reject-button">reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+                <td>
+                  <button type="button" class="accept-button">Accept</button>
+                </td>
+                <td>
+                  <button type="button" class="reject-button">reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+                <td>
+                  <button type="button" class="accept-button">Accept</button>
+                </td>
+                <td>
+                  <button type="button" class="reject-button">reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ali Youssef Solh</td>
+                <td>Studio</td>
+                <td>202</td>
+                <td>12-10-2022</td>
+                <td>12-10-2023</td>
+                <td>
+                  <button type="button" class="accept-button">Accept</button>
+                </td>
+                <td>
+                  <button type="button" class="reject-button">reject</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="Stat__Card staff-information">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Staff Information</div>
+            <button
+              type="button"
+              class="staff-button"
+              onclick="AddStaffDisplay()"
+            >
+              Add Staff
+            </button>
+            <table class="table" id="staff-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Mobile Number</th>
+                  <th>Current Role</th>
+                  <th>address</th>
+                  <th>Delete</th>
+                  <th>Assign Task</th>
+                </tr>
+              </thead>
+
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="Stat__Card tasks">
+          <div class="Stat__Container">
+            <div class="Stat__Title">Staff Tasks</div>
+            <table class="table" id="task-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Current Task</th>
+                  <th>Due date</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="addstaff-body" id="addstaff-body">
+        <div class="form" id="form">
+          <form action="" onsubmit="return false">
+            <h1>Add Staff</h1>
+            <div class="row">
+              <div class="title">UserName</div>
+              <input
+                type="text"
+                size="25"
+                class="fill"
+                id="staff-name"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="title">Phone Number</div>
+              <input
+                type="text"
+                size="25"
+                class="fill"
+                id="staff-number"
+                required
+              />
+            </div>
+
+            <div class="row">
+              <div class="title">Address</div>
+              <input
+                type="text"
+                size="25"
+                class="fill"
+                id="staff-address"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="title">Role</div>
+              <select name="role" id="role-form" class="fill">
+                <option value="house_keeping">house_keeping</option>
+                <option value="recepcionist">recepcionist</option>
+              </select>
+            </div>
+            <div class="row" id="lastrow">
+              <button id="submit-staff" onclick="submitFunction()">
+                Add Staff
+              </button>
+              <button type="button" id="cancel" onclick="cancelFunction()">
+                cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="add-task-form" id="add-task-form">
+        <div class="form" id="form">
+          <form action="" onsubmit="return false">
+            <h1 id="task-title">Assign New Task</h1>
+            <div class="row">
+              <div class="title">Task</div>
+              <textarea class="fill" id="newTask" required></textarea>
+            </div>
+            <div class="row">
+              <div class="title">Due Date</div>
+              <input type="Date" class="fill" id="task-date" required />
+            </div>
+
+            <div class="row" id="lastrow">
+              <button id="submit-task">Add Task</button>
+              <button
+                type="button"
+                id="cancelTask"
+                onclick="cancelTaskFunction()"
+              >
+                cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function AddStaffDisplay() {
+        document.getElementById("home").style.opacity = 0.07;
+        let add_staff_form = document.getElementById("addstaff-body");
+        add_staff_form.classList.add("add-staff-style");
+      }
+      function AddTaskDisplay(e) {
+        // console.log(i);
+        // console.log(Staff_Array);
+        console.log(e.target.parentElement.parentElement);
+        document.getElementById("home").style.opacity = 0.07;
+        let add_task_form = document.getElementById("add-task-form");
+        let index = e.target.parentElement.parentElement.rowIndex;
+        console.log(index);
+        document.getElementById("task-title").innerHTML =
+          "Assign Task to " + Staff_Array[index - 1].name;
+        document.getElementById("submit-task").onclick = function () {
+          AddTaskFunction(index - 1);
+        };
+        add_task_form.classList.add("add-task-style");
+      }
+      function AddTaskFunction(i) {
+        let task_description = document.getElementById("newTask").value;
+        let task_date = document.getElementById("task-date").value;
+        if (task_description !== "" && task_date !== null) {
+          Task_Array.push(
+            new Task(Staff_Array[i], task_description, task_date)
+          );
+          let newrow = document
+            .querySelector("#task-table tbody")
+            .insertRow(Task_Array.length - 1);
+          // .getElementById("task-table")
+          // .insertRow(Task_Array.length);
+          let cell1 = newrow.insertCell(0);
+          let cell2 = newrow.insertCell(1);
+          let cell3 = newrow.insertCell(2);
+          let cell4 = newrow.insertCell(3);
+          cell1.innerHTML = Staff_Array[i].name;
+          cell2.innerHTML = task_description;
+          cell3.innerHTML = task_date;
+          cell4.innerHTML = '<td><i class="fa-solid fa-trash"></i></td>';
+          cancelTaskFunction();
+          AddTaskFunctionalityDeleteButton();
+        }
+      }
+      function submitFunction() {
+        let name = document.getElementById("staff-name").value;
+        let number = document.getElementById("staff-number").value;
+        let address = document.getElementById("staff-address").value;
+        let role = document.getElementById("role-form").value;
+        if (name !== "" && (number !== "") & (address !== "") && role !== "") {
+          let newStaff = new Staff(name, number, role, address);
+          Staff_Array.push(newStaff);
+          console.log(Staff_Array);
+          // let newrow = document
+          //   .getElementById("staff-table")
+          //   .insertRow(Staff_Array.length);
+          let newrow = document
+            .querySelector("#staff-table tbody")
+            .insertRow(Staff_Array.length - 1);
+          let cell1 = newrow.insertCell(0);
+          let cell2 = newrow.insertCell(1);
+          let cell3 = newrow.insertCell(2);
+          let cell4 = newrow.insertCell(3);
+          let cell5 = newrow.insertCell(4);
+          let cell6 = newrow.insertCell(5);
+          console.log(role);
+          cell1.innerText = name;
+          cell2.innerText = number;
+          cell3.innerHTML = `<select name="role" id="role">
+        <option value="house_keeping">${role}</option>
+        <option value="recepcionist">${
+          role === "recepcionist" ? "house_keeping" : "recepcionist"
+        }</option>
+
+      </select>`;
+          cell4.innerText = address;
+          cell5.innerHTML = '<i class="fa-solid fa-trash"></i>';
+          cell6.innerHTML =
+            '<button type="button" class="new-task-button">New Task</button>';
+          cancelFunction();
+          addFunctionalityButtons();
+        }
+      }
+      function cancelFunction() {
+        document.getElementById("home").style.opacity = 1;
+        let add_staff_form = document.getElementById("addstaff-body");
+
+        add_staff_form.classList.remove("add-staff-style"); //back to display none
+      }
+      function cancelTaskFunction() {
+        document.getElementById("home").style.opacity = 1;
+        let add_task_form = document.getElementById("add-task-form");
+        add_task_form.classList.remove("add-task-style"); //back to display none
+      }
+      function Staff(name, mobileNumber, role, address) {
+        this.name = name;
+        this.mobileNumber = mobileNumber;
+        this.role = role;
+        this.address = address;
+        // this.task = task;
+      }
+      function Task(staff, description, dueDate) {
+        this.staff = staff;
+        this.description = description;
+        this.dueDate = dueDate;
+      }
+      let Task_Array = [];
+
+      let Staff_Array = [
+        new Staff("Leonardo", "71913710", "house_keeping", "baalbeck"),
+        new Staff("Ali", "71913710", "house_keeping", "baalbeck"),
+        new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
+        new Staff("mhamad", "71913710", "house_keeping", "baalbeck"),
+        new Staff("Rana", "71913710", "house_keeping", "baalbeck"),
+        new Staff("bilal", "71913710", "house_keeping", "baalbeck"),
+      ];
+      for (let i = 0; i < Staff_Array.length; i++) {
+        Task_Array.push(
+          new Task(Staff_Array[i], "clean all rooms", "2022-12-2021")
+        );
+      }
+      let staff_html_array = Staff_Array.map(
+        (staff) =>
+          `<tr><td>${staff.name}</td><td>${
+            staff.mobileNumber
+          }</td><td><select name="role" id="role">
+        <option value="house_keeping">${staff.role}</option>
+        <option value="recepcionist">${
+          staff.role === "recepcionist" ? "house_keeping" : "recepcionist"
+        }</option>
+
+      </select></td><td>${
+        staff.address
+      }</td><td><i class="fa-solid fa-trash"></i></td><td><button type="button" class="new-task-button">New Task</button></td></tr>`
+      );
+      let task_html_array = Task_Array.map(
+        (task) =>
+          `<tr><td>${task.staff.name}</td><td>${task.description}</td><td>${task.dueDate}</td><td><i class="fa-solid fa-trash"></i></td></tr>`
+      );
+
+      document.querySelector("#staff-table tbody").innerHTML =
+        staff_html_array.join("");
+      document.querySelector("#task-table tbody").innerHTML =
+        task_html_array.join("");
+
+      function edit(index) {
+        Staff_Array[index].role =
+          document.querySelector("#staff-table tbody").childNodes[
+            index
+          ].childNodes[2].childNodes[0].value;
+
+        console.log(Staff_Array);
+      }
+
+      function addFunctionalityButtons() {
+        console.log(Staff_Array);
+        var parent = document.querySelector("#staff-table tbody");
+        console.log(parent);
+        for (let i = 0, len = parent.children.length; i < len; i++) {
+          console.log("in");
+          //Role
+          parent.childNodes[i].childNodes[2].addEventListener(
+            "input",
+            function () {
+              edit(i);
+            },
+            false
+          );
+          parent.childNodes[i].childNodes[4].addEventListener(
+            "click",
+
+            deleteStaff,
+            false
+          );
+          parent.childNodes[i].childNodes[5].addEventListener(
+            "click",
+
+            AddTaskDisplay
+          );
+        }
+      }
+      function AddTaskFunctionalityDeleteButton() {
+        var parent = document.querySelector("#task-table tbody");
+        for (let i = 0, len = parent.children.length; i < len; i++) {
+          parent.childNodes[i].childNodes[3].addEventListener(
+            "click",
+            deleteTask,
+            false
+          );
+        }
+      }
+      function deleteStaff(e) {
+        console.log(e.target.parentElement.parentElement);
+        let index = e.target.parentElement.parentElement.rowIndex;
+        if (index) {
+          Staff_Array.splice(index - 1, 1);
+          document.getElementById("staff-table").deleteRow(index);
+          console.log(Staff_Array);
+        }
+      }
+      function deleteTask(e) {
+        let index = e.target.parentElement.parentElement.rowIndex;
+        console.log(index);
+        if (index) {
+          Task_Array.splice(index - 1, 1);
+          document.getElementById("task-table").deleteRow(index);
+          console.log(Task_Array);
+        }
+      }
+
+      addFunctionalityButtons();
+      AddTaskFunctionalityDeleteButton();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    
+  }
+  
+  body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    color:black;
+    line-height:1.6;
+    background-color: black;
+  }
+  
+  #showcase{
+    background-image:url('../photos and videos/pool6.jpg');
+    /* 'http://traversymedia.com/downloads/assets/beachshowcase.jpg */
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+    color: white;
+  }
+  
+  #showcase h1{
+    font-size:50px;
+    line-height:1.2;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+  
+  #showcase .button{
+    font-size:18px;
+    text-decoration:none;
+    color:white;             
+    /* black */
+    border:white 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+  }
+  
+  /* #showcase .button:hover{
+    background:black;
+    color:#fff;
+  } */
+  
+  #section-a{
+    padding:20px;
+    background:black;
+    color:#fff;
+    text-align:center;
+  }
+  
+  
+  
+  
+  .time{
+    color: white;
+    background-color: black;
+   
+  }
+  .time h2{
+    text-align: center;
+  }
+  .time .time-table{
+    margin: 20px auto;
+    width: 60%;
+  }
+  .time .time-table .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+  }
+  .time .time-table .row .description{
+    width: 20%;
+  }
+  

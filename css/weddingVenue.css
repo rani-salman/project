@@ -1,0 +1,504 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.container1 #myvideo{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px ;
+    position: fixed;
+    background-image: linear-gradient(180deg, rgba(0,0,0,10), rgba(0,0,0,0.6));
+    z-index: 999999;
+}
+/* .navbar{
+    margin-top: 10px;
+} */
+.nav-barr{
+    margin-top: 10px;
+}
+.nav-barr a{
+    color: white !important;
+}
+#logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    width: auto;
+}
+nav li{
+    display: inline;
+    list-style: none;
+    padding: 0px 20px;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: white;
+}
+a,button{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid grey;
+    border-radius: 50px;
+    padding: 9px 25px;
+}
+nav li a:hover{
+    color:  grey;
+    transition: all 0.3s ease 0s;
+    padding-top: 50px;
+    text-decoration: underline;
+    top: 50px;
+}
+button:hover{
+    background-color: grey;
+    transition: all 0.3s ease 0s;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.vertical {
+    border-left: 0.5px solid white;
+    height: 60px;
+    position: absolute;
+    padding-left: 10px;
+}
+.container1   #myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 600px;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    object-fit: fill;
+    box-sizing: none;
+    width: 100% !important;
+}
+.container1 .title{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 3;
+}
+
+.title{
+    margin-top: 330px;
+    margin-left: 30px;
+    color: white;
+}
+.title, ul{
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 13px;
+    word-spacing: 10px;
+    padding-top: 10px;
+    
+    
+}
+.title, h2{
+    font-family: garamond, serif;
+    font-size: 44px;
+    line-height: 62px;
+}
+.title, p{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+.title, h5{
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.contactInfo:hover {
+    color: grey ;    
+}
+.contactInfo a:hover {
+    color: grey ;    
+}
+.contactInfo a{
+    display: inline-block;
+    text-decoration: underline;
+    width: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-style: italic;
+    font-family: "Monotype Garamond", garamond, serif;
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: white;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 15px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(0, 0, 0);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: white;
+}
+.footer-col .copyright p{
+	font-size: 9px;
+	color:#ffffff;
+	margin: 5px 0 0 -15px;
+}
+/* end of footer section */
+
+/* photo-insta section */
+.pre-footer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40 px;
+}
+.headtitle1{
+    margin-top: 20px;
+}
+.headtitle1 p{
+	font: "Neue Helvetica", helvetica, sans-serif;
+	font-size: 25px;
+	text-align: center;
+	height: 50px;
+}
+.headtitle2 p{
+	font: "Monotype Garamond", garamond, serif;
+	font-size: 15px;
+	text-align: center;
+	height: 50px;
+}
+.photo-row {
+	display: flex;
+	flex-wrap: wrap;
+	/* margin: 0 50px; */
+	/* padding: 50px; */
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.photo-col {
+	height: 240px;
+	/* position:relative; */
+	/* left: 270px; */
+}
+
+.photo-col img {
+	width: 90%;
+	height: 80%;
+}
+
+
+.photo-col p {
+	font-family: "Neue Helvetica", helvetica, sans-serif;
+	font-size: 13px;
+	color:#595454;
+	position:relative;
+	left: 10px;
+
+}
+
+/* photo-insta section end */
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.nav-barr .loginbutton{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 9px 25px;
+    margin-left: 50%;
+    position: relative;
+
+}
+.nav-barr .loginbutton:hover{
+    background-color: grey;
+    transition: all 0.3s ease 0s;
+}
+/* wedding */
+.weddingHeaderImg {
+    position: relative;
+}
+.weddingHeaderImg img{
+    width: 100%;
+    height: 650px;
+}
+.weddingHeaderImg h3{
+    color: white;
+    font-family:  "Monotype Garamond", garamond, serif;
+    position: absolute;
+    bottom: 22%;
+    width: 100%;
+    text-align: center;
+}
+.weddingHeaderImg p{
+    color: white;
+    font-size: 60px;
+    font-family: "Neue Helvetica", helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 14%;
+    width: 100%;
+    text-align: center;
+}
+.weddingHeaderImg hr{
+    width: 4%;
+    position: absolute;
+    bottom: 9%;
+    right: 47.5%;
+    background-color: white;
+    border: solid 1px;
+    color: white;
+}
+.weddingParagraph{
+    text-align: center;
+
+}
+.weddingParagraph p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Monotype Garamond", garamond, serif;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 40px;
+}
+.weddingContactus {
+    display: flex;
+    width: 50%;
+    background-color: black;
+    margin-left: 25%;
+}
+.weddingContactus p{
+   color: white;
+   font-size: 22px;
+   font-family: "Monotype Garamond", garamond, serif;
+   padding-top: 2.5%;
+   padding-left: 3%;
+}
+.weddingContactus a{
+    color: white;
+    font-size: 15px;
+    font-family: "Monotype Garamond", garamond, serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 25%;
+    text-decoration: underline;
+ }
+.weddingContactus a:hover{
+    color: grey ;
+
+ }
+
+.btn-1{
+    position: relative;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-size: 14px;
+    height: 2%;
+    width: 23%;
+    left: 4%;
+    margin-top: 1.8%;
+    font-family: "Neue Helvetica", helvetica, sans-serif;
+ }
+.btn-1:hover{
+    background-color:white;
+    color: black;
+ }
+ .weddingVenueTypes {
+    display: flex inline;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.weddingVenueTypes p {
+    margin-top: 4%;
+    margin-left: 60%;
+    padding-right: 15%;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Monotype Garamond", garamond, serif;
+}
+
+.weddingVenueTypes h4 {
+    margin-top: -21%;
+    margin-left: 60%;
+    font-family: "Monotype Garamond", garamond, serif;
+    font-size: 20px;
+
+}
+.weddingVenueTypes img{
+    width: 40%;
+    position: relative;
+    left: 16%;
+}
+.weddingVenueTypes hr{
+    width: 3.5%;
+    margin-top: 1%;
+    margin-left: 62%;
+    background-color: black;
+    border: solid 1px;
+    color: black;
+}
+.weddingVenueTypes2 {
+    display: flex inline;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 12%;
+}
+
+.weddingVenueTypes2 p {
+    margin-top: 4%;
+    margin-left: 17%;
+    font-size: 20px;
+    padding-right: 60%;
+    text-align: justify;
+    font-family: "Monotype Garamond", garamond, serif;
+
+}
+
+.weddingVenueTypes2 h4 {
+    margin-top: -20%;
+    margin-left: 17%;
+    font-family: "Monotype Garamond", garamond, serif;
+    font-size: 20px;
+
+}
+.weddingVenueTypes2 img{
+    width: 40%;
+    position: relative;
+    left: 45%;
+}
+.weddingVenueTypes2 hr{
+    width: 3.5%;
+    margin-top: 1%;
+    margin-left: 19%;
+    background-color: black;
+    border: solid 1px;
+    color: black;
+}
+
+/* house */
+.housekeepingBody{
+    background-color: #F1F1F1;
+}
+.weekdiv{
+    font-size: 20px;
+    font-family:  "Monotype Garamond", garamond, serif;
+    padding: 2%;
+    padding-bottom: 10%;
+}
+.divForweekday{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding-top: 2%;
+}
+.weekdayTable{
+    
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    border: solid black 1px;
+}
+.weekdayTable tr{
+    border: solid black 1px;
+    background-color: rgb(176, 175, 175);
+}
+.weekdayTable tr:nth-child(even){
+    border: solid black 1px;
+    background-color: rgba(252, 252, 255, 0.867);
+}
+.weekdayTable th {
+    text-align: left;
+    padding-right: 50px;
+    background-color:black;
+    color: white;
+}
