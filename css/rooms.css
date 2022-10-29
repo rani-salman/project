@@ -31,13 +31,18 @@ body{
     height: fill;
 }
 .breif{
-    position: relative;
+    /* position: relative; */
     height: 180px;
     width: 100%;
     background-color: black;
-    margin:0;
     padding: 50px 0px;
-    top:-10px;
+    justify-content: space-evenly;
+    /* margin:0;
+    padding: 50px 0px;
+    top:-10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .breif p{
     color:white;
@@ -47,18 +52,17 @@ body{
     text-align: center;
     margin-top:0;
 }
-.breif .book{
+ .breif .book{
     background: rgba(255, 255, 255, 1); 
     padding: 9px 25px;
-    position: absolute;
-    left: 50%;
+    
 
 }
 .breif .book:hover{
     background-color: grey;
     transition: all 0.3s ease 0s;
     
-}
+} 
 .detailsTitle p{
     text-align: center;
     font-size: 24px;

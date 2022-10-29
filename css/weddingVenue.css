@@ -353,6 +353,8 @@ ul{
     width: 50%;
     background-color: black;
     margin-left: 25%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .weddingContactus p{
    color: white;
@@ -361,15 +363,7 @@ ul{
    padding-top: 2.5%;
    padding-left: 3%;
 }
-.weddingContactus a{
-    color: white;
-    font-size: 15px;
-    font-family: "Monotype Garamond", garamond, serif;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 25%;
-    text-decoration: underline;
- }
+
 .weddingContactus a:hover{
     color: grey ;
 
@@ -383,8 +377,8 @@ ul{
     font-size: 14px;
     height: 2%;
     width: 23%;
-    left: 4%;
-    margin-top: 1.8%;
+    /* left: 4%; */
+    /* margin-top: 1.8%; */
     font-family: "Neue Helvetica", helvetica, sans-serif;
  }
 .btn-1:hover{

@@ -4,11 +4,13 @@ body{
     height: 100vh;
     background-position: center;
     background-size: cover;
+    font-family: Neue Helvetica,helvetica,sans-serif;
+    
 }
 .container1 #myvideo{
     width: 100%;
 }
-header{
+/* header{
     width: 100%;
     height: 96px;
     justify-content: space-between;
@@ -17,7 +19,7 @@ header{
     position: fixed;
     background-image: linear-gradient(180deg, rgba(0,0,0,10), rgba(0,0,0,0.6));
     z-index: 999999;
-}
+} */
 /* .navbar{
     margin-top: 10px;
 } */
@@ -95,17 +97,18 @@ ul{
 }
 .container1 .title{
     position: absolute;
-    top:0;
-    left:0;
+    bottom:20%;
+    left:3%;
     z-index: 3;
+    color: white;
 }
 
-.title{
+/* .title{
     margin-top: 330px;
     margin-left: 30px;
     color: white;
-}
-.title, ul{
+} */
+/* .title, ul{
     font-family: Helvetica, sans-serif;
     font-size: 10px;
     line-height: 13px;
@@ -113,7 +116,7 @@ ul{
     padding-top: 10px;
     
     
-}
+} */
 .title, h2{
     font-family: garamond, serif;
     font-size: 44px;
@@ -130,18 +133,7 @@ ul{
     line-height: 18px;
 }
 
-.contactInfo:hover {
-    color: grey ;    
-}
-.contactInfo a:hover {
-    color: grey ;    
-}
-.contactInfo a{
-    display: inline-block;
-    text-decoration: underline;
-    width: auto;
-}
-/* services */
+
 .services-section{
     margin-top: 20px;
 }
