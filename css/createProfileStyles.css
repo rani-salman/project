@@ -1,0 +1,111 @@
+section{
+  display: flex;
+}
+.createProfileForm{
+
+  width: 50%;
+}
+.createProfileImg img{
+  position: sticky;
+  top: 0;
+  margin-left: 150px;
+  width: 500px;
+  height: 573px;
+  padding: 0;
+
+
+
+}
+
+.createProfileForm{
+  padding-top: 50px;
+  padding-left: 50px;
+
+  margin-left: 100px;
+}
+
+
+.createProfileForm h1{
+    color:black;
+    text-align: center;
+    font-family: "Century Gothic",SANS-SERIF;
+    font-weight: 10;
+    font-size: 2em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 3.76px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+body{
+  text-align: center;
+  font-family: "Century Gothic",SANS-SERIF;
+
+  margin: 0;
+  padding: 0;
+}
+
+.fill{
+  width: 100px;
+  height: 40px;
+  border: transparent;
+  border-bottom: 1px solid black;
+}
+.fillname{
+  width: 150px;
+  text-align: left;
+}
+
+.phonenumber{
+  margin-left: 50px;
+}
+.lastname,.username{
+  width: 400px;
+}
+.country{
+  width: 370px;
+}
+.countrycode{
+  width: 100px;
+}
+.email{
+  width: 436px;
+}
+h5{
+  display: inline;
+}
+
+
+.button1, .button2{
+  width: 180px;
+  height: 40px;
+  font-family:"Neue Helvetica W04",Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 550;
+}
+
+.button1{
+  background-color: white;
+   color: black;
+   border: 1px solid black;
+   margin-left: 20px;
+}
+.button2{
+  background-color:black;
+   color: white;
+}
+
+.button1:hover{
+  background-color:black;
+   color: white;
+
+}
+.button2:hover{
+  background-color: white;
+   color: black;
+   border: 1px solid black;
+}
+.title, .lastname, .country, .countrycode, .email{
+
+}

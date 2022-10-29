@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up | Palms Spring Hotel</title>
+    <link rel="stylesheet" href="../css/tableReservationStyles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="createProfileForm" id="div1">
+        <h1>RESERVE A TABLE</h1>
+        <br />
+        <br />
+        <form
+          class=""
+          action="index.html"
+          method="post"
+          onsubmit="return verifyPassword()"
+        >
+          <label for="">Table View</label>
+          <select class="fill" name="">
+            <option value="">Seaside</option>
+            <option value="">Smoking Area</option>
+            <option value="">Non-Smoking Area</option>
+          </select>
+          <label for="">Nb of Guests</label>
+          <select class="fill" name="">
+            <option value="">2</option>
+            <option value="">4</option>
+            <option value="">6</option>
+            <option value="">8</option>
+          </select>
+          <br />
+          <br />
+          <br />
+
+          <label for="">Time</label>
+          <input
+            class="fill"
+            type="time"
+            id="appt"
+            name="appt"
+            min="17:00"
+            max="01:00"
+            required
+          />
+          <br />
+          <br />
+          <p></p>
+          <p>
+            <label for="">Date</label>
+            <input
+              class="fill"
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2022-11-01"
+              min="2022-11-01"
+              max="2022-12-31"
+              required
+            />
+          </p>
+          <br />
+          <br />
+
+          <br />
+          <p>
+            <input type="reset" value="CLEAR" class="button2" />
+            <input
+              type="submit"
+              onclick="CheckPassword(pass)"
+              value="SUBMIT"
+              class="button1"
+              id="b1"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div class="createProfileImg">
+        <img src="../photos and videos/hotel2.jpg" alt="" />
+      </div>
+    </section>
+  </body>
+</html>

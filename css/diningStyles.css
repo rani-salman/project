@@ -1,0 +1,253 @@
+.first{
+  padding-top: 10px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+.second{
+  padding-top: 10px;
+  height: 600px;
+  background-color: black;
+  color: white;
+
+}
+.secondfirst{
+  margin-top: 30px;
+  background-color: white;
+  color: black;
+  width: 60%;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#firstH5{
+
+  padding-left: 30px;
+  display: inline-block;
+
+}
+#secondH5{
+  display: inline-block;
+  padding-left: 30%;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .25em;
+  line-height: 1.33em;
+}
+.buttonanchor{
+  text-decoration: none;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-size: .625rem;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .3em;
+  color: white;
+}
+
+.button1{
+  margin-left: 20px;
+  width: 20%;
+  height: 40%;
+  background-color: black;
+
+
+
+}
+
+.button1:hover{
+  background-color: white;
+  border: 1px solid black;
+}
+.button1:hover .buttonanchor{
+  color: black;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.first h1{
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 5px;
+
+}
+.first p,.secondfirst h5{
+  font-family: Monotype Garamond,garamond,serif;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 400;
+}
+.first h3{
+  font-family: Neue Helvetica,helvetica,sans-serif;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.menus{
+  text-decoration: none;
+  color: white;
+}
+.image1{
+  width: 100%;
+
+}
+.contact{
+  display: inline-block;
+}
+.thirdcontainer .p1{
+
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+  font-family: Monotype Garamond,garamond,serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+}
+.thirdcontainer h2{
+  padding-top: 50px;
+  text-align: center;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 3.76px;
+  padding-bottom: 50px;
+}
+.rule1{
+  width: 55%;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+.p2,.p3,.p4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .2em;
+  line-height: 1.33em;
+  color: white;
+}
+.p2{
+  margin-left: 25%;
+}
+.p3{
+padding-left: 150px;
+padding-right: 100px;
+}
+.btn{
+  margin-top: 50px;
+  letter-spacing: .2em;
+  width: 180px;
+  height: 40px;
+  font-family:"Neue Helvetica W04",Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 550;
+  background-color:black;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  margin-left: 43%;
+
+}
+.btn:hover{
+
+  background-color: white;
+   color: black;
+}
+.third{
+  background-color: white;
+  height: 1000px;
+}
+.third h2{
+
+  padding-top: 50px;
+  text-align: center;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 3.76px;
+  padding-bottom: 1px;
+}
+.img2{
+  padding-left: 130px;
+  padding-right: 100px;
+  width: 80%;
+  height: 500px;
+
+}
+.img2cap{
+  padding-left: 130px;
+  padding-right: 100px;
+  width: 80%;
+
+}
+figcaption a{
+  text-decoration: none;
+  color: black;
+
+}
+figcaption{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: .2em;
+  line-height: 1.33em;
+  color: black;
+
+
+
+
+}
+figure{
+  height:550px;
+}
+.underline{
+  border: 0;
+  border-bottom: 2px solid black;
+  width: 3%;
+  margin-bottom: 50px;
+}
+.food,.drink{
+  color: black;
+  text-decoration: none;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: .2em;
+  line-height: 1.33em;
+  padding-top: 10px;
+  border-top: 1.5px solid black;
+
+
+}
+.drink{
+  margin-left: 10%;
+}
+.food{
+  margin-left: 32.5%;
+}

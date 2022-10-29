@@ -1,0 +1,76 @@
+.a1{
+  margin-top: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.dining{
+  text-align: center;
+  font-family: Neue Helvetica,helvetica,sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 3.76px;
+
+}
+.p1{
+  margin-top: 100px;
+  text-align: center;
+    font-family: Monotype Garamond,garamond,serif;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+hr{
+  margin-top: 30px;
+  border: 0;
+  border-top: 1px solid black;
+  width: 60%;
+
+
+  }
+
+table{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.title{
+  margin-top: 50px;
+   text-align: center;
+   font-family: Neue Helvetica,helvetica,sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 3.76px;
+}
+.head{
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+td{
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 50%;
+  font-family: Monotype Garamond,garamond,serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .0277777778em;
+  line-height: 1.5em;
+
+}
+.head{
+  font-family: Neue Helvetica,helvetica,sans-serif;
+   font-weight: 600;
+   font-size: .8em;
+   line-height: 1.4;
+   text-transform: uppercase;
+   letter-spacing: 3.76px;
+}
