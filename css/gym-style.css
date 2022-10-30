@@ -27,44 +27,8 @@ body{
     background-color: #000;
 }
 
-/* Header */
-.header{
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem 8%;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  justify-content: space-between;
-  background-color: #000;
-}
-.header .logo{
-  font-size: 22px;
-  font-weight: bolder;
-  color: #fff;
-  padding-right: 10px;
-  margin-right: 20rem;
-}
-.header .logo i{
-  color: #fff;
-  padding: 0.5rem;
-}
-.header .navbar a{
-  font-size: 1.1rem;
-  margin: 0 1rem;
-  color: #fff;
-}
-.header .navbar a:hover{
-  color: #baa6cf;
-}
-.header .btn{
-  background: transparent;
-  color: black;
-  border: 1px solid black;
-  font-size: 12px;
-  padding: 8px;
-}
+
+
 
 /* Home Section */
 .max-width{
