@@ -22,18 +22,18 @@
         <div class="Stat__Card">
           <div class="Stat__Container">
             <div class="Stat__Title">Total Bookings</div>
-            <div class="Stat__Content">2,398</div>
+            <div class="Stat__Content">200</div>
           </div>
         </div>
         <div class="Stat__Card">
           <div class="Stat__Container">
             <div class="Stat__Title">Available Rooms</div>
-            <div class="Stat__Content">62,156</div>
+            <div class="Stat__Content">62</div>
           </div>
         </div>
         <div class="Stat__Card">
           <div class="Stat__Container">
-            <div class="Stat__Title">Enquiries</div>
+            <div class="Stat__Title">New Pending Requests</div>
             <div class="Stat__Content">122</div>
           </div>
         </div>
@@ -219,81 +219,20 @@
         <div class="Stat__Card pending-requests">
           <div class="Stat__Container">
             <div class="Stat__Title">Pending Booking Requests</div>
-            <table class="table">
-              <tr>
-                <th>Name</th>
-                <th>Room Type</th>
-                <th>Room Number</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Accept</th>
-                <th>Reject</th>
-              </tr>
-              <tr>
-                <td>Ali Youssef Solh</td>
-                <td>Studio</td>
-                <td>202</td>
-                <td>12-10-2022</td>
-                <td>12-10-2023</td>
-                <td>
-                  <button type="button" class="accept-button">Accept</button>
-                </td>
-                <td>
-                  <button type="button" class="reject-button">reject</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Ali Youssef Solh</td>
-                <td>Studio</td>
-                <td>202</td>
-                <td>12-10-2022</td>
-                <td>12-10-2023</td>
-                <td>
-                  <button type="button" class="accept-button">Accept</button>
-                </td>
-                <td>
-                  <button type="button" class="reject-button">reject</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Ali Youssef Solh</td>
-                <td>Studio</td>
-                <td>202</td>
-                <td>12-10-2022</td>
-                <td>12-10-2023</td>
-                <td>
-                  <button type="button" class="accept-button">Accept</button>
-                </td>
-                <td>
-                  <button type="button" class="reject-button">reject</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Ali Youssef Solh</td>
-                <td>Studio</td>
-                <td>202</td>
-                <td>12-10-2022</td>
-                <td>12-10-2023</td>
-                <td>
-                  <button type="button" class="accept-button">Accept</button>
-                </td>
-                <td>
-                  <button type="button" class="reject-button">reject</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Ali Youssef Solh</td>
-                <td>Studio</td>
-                <td>202</td>
-                <td>12-10-2022</td>
-                <td>12-10-2023</td>
-                <td>
-                  <button type="button" class="accept-button">Accept</button>
-                </td>
-                <td>
-                  <button type="button" class="reject-button">reject</button>
-                </td>
-              </tr>
+            <table class="table" id="requests-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>#Persons</th>
+                  <th>Room Type</th>
+                  <th>Room Number</th>
+                  <th>Start Date</th>
+                  <th>EndDate</th>
+                  <th>Accept</th>
+                  <th>Reject</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
             </table>
           </div>
         </div>

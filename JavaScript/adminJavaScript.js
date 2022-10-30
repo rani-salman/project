@@ -1,3 +1,93 @@
+function Staff(name, mobileNumber, role, address) {
+  this.name = name;
+  this.mobileNumber = mobileNumber;
+  this.role = role;
+  this.address = address;
+}
+function Task(staff, description, dueDate) {
+  this.staff = staff;
+  this.description = description;
+  this.dueDate = dueDate;
+}
+function Request(
+  Name,
+  numberOfPersons,
+  RoomType,
+  RoomNumber,
+  startDate,
+  enddate
+) {
+  this.name = Name;
+  this.numberOfPersons = numberOfPersons;
+  this.RoomType = RoomType;
+  this.RoomNumber = RoomNumber;
+  this.startDate = startDate;
+  this.enddate = enddate;
+}
+let Request_array = [
+  new Request("Ali Youssef Solh", 2, "Suite", 202, "2022-01-30", "2023-01-30"),
+  new Request("Ali Youssef Solh", 2, "Suite", 202, "2022-01-30", "2023-01-30"),
+  new Request("Ali Youssef Solh", 2, "Suite", 202, "2022-01-30", "2023-01-30"),
+  new Request("Ali Youssef Solh", 2, "Suite", 202, "2022-01-30", "2023-01-30"),
+  new Request("Ali Youssef Solh", 2, "Suite", 202, "2022-01-30", "2023-01-30"),
+  new Request("Ali Youssef Solh", 2, "Suite", 202, "2022-01-30", "2023-01-30"),
+];
+
+let Staff_Array = [
+  new Staff("Leonardo", "71913710", "house_keeping", "baalbeck"),
+  new Staff("Ali", "71913710", "house_keeping", "baalbeck"),
+  new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
+  new Staff("mhamad", "71913710", "house_keeping", "baalbeck"),
+  new Staff("Rana", "71913710", "house_keeping", "baalbeck"),
+  new Staff("bilal", "71913710", "house_keeping", "baalbeck"),
+];
+let Task_Array = [];
+for (let i = 0; i < Staff_Array.length; i++) {
+  Task_Array.push(new Task(Staff_Array[i], "clean all rooms", "2022-12-1"));
+}
+let request_html_array = Request_array.map(
+  (request) =>
+    `<tr>
+<td>${request.name}</td>
+<td>${request.numberOfPersons}</td>
+<td>${request.RoomType}</td>
+<td>${request.RoomNumber}</td>
+<td>${request.startDate}</td>
+<td>${request.enddate}</td>
+<td>
+  <button type="button" class="accept-button">Accept</button>
+</td>
+<td>
+  <button type="button" class="reject-button">reject</button>
+</td>
+</tr>`
+);
+
+let staff_html_array = Staff_Array.map(
+  (staff) =>
+    `<tr><td>${staff.name}</td><td>${
+      staff.mobileNumber
+    }</td><td><select name="role" id="role">
+    <option value="house_keeping">${staff.role}</option>
+    <option value="recepcionist">${
+      staff.role === "recepcionist" ? "house_keeping" : "recepcionist"
+    }</option>
+
+  </select></td><td>${
+    staff.address
+  }</td><td><i class="fa-solid fa-trash"></i></td><td><button type="button" class="new-task-button">New Task</button></td></tr>`
+);
+let task_html_array = Task_Array.map(
+  (task) =>
+    `<tr><td>${task.staff.name}</td><td>${task.description}</td><td>${task.dueDate}</td><td><i class="fa-solid fa-trash"></i></td></tr>`
+);
+document.querySelector("#requests-table tbody").innerHTML =
+  request_html_array.join("");
+document.querySelector("#staff-table tbody").innerHTML =
+  staff_html_array.join("");
+document.querySelector("#task-table tbody").innerHTML =
+  task_html_array.join("");
+
 function AddStaffDisplay() {
   document.getElementById("home").style.opacity = 0.07;
   let add_staff_form = document.getElementById("addstaff-body");
@@ -48,10 +138,7 @@ function submitFunction() {
   if (name !== "" && (number !== "") & (address !== "") && role !== "") {
     let newStaff = new Staff(name, number, role, address);
     Staff_Array.push(newStaff);
-    console.log(Staff_Array);
-    // let newrow = document
-    //   .getElementById("staff-table")
-    //   .insertRow(Staff_Array.length);
+    // console.log(Staff_Array);
     let newrow = document
       .querySelector("#staff-table tbody")
       .insertRow(Staff_Array.length - 1);
@@ -90,54 +177,6 @@ function cancelTaskFunction() {
   let add_task_form = document.getElementById("add-task-form");
   add_task_form.classList.remove("add-task-style"); //back to display none
 }
-function Staff(name, mobileNumber, role, address) {
-  this.name = name;
-  this.mobileNumber = mobileNumber;
-  this.role = role;
-  this.address = address;
-  // this.task = task;
-}
-function Task(staff, description, dueDate) {
-  this.staff = staff;
-  this.description = description;
-  this.dueDate = dueDate;
-}
-let Task_Array = [];
-
-let Staff_Array = [
-  new Staff("Leonardo", "71913710", "house_keeping", "baalbeck"),
-  new Staff("Ali", "71913710", "house_keeping", "baalbeck"),
-  new Staff("Rani", "71913710", "house_keeping", "baalbeck"),
-  new Staff("mhamad", "71913710", "house_keeping", "baalbeck"),
-  new Staff("Rana", "71913710", "house_keeping", "baalbeck"),
-  new Staff("bilal", "71913710", "house_keeping", "baalbeck"),
-];
-for (let i = 0; i < Staff_Array.length; i++) {
-  Task_Array.push(new Task(Staff_Array[i], "clean all rooms", "2022-12-2021"));
-}
-let staff_html_array = Staff_Array.map(
-  (staff) =>
-    `<tr><td>${staff.name}</td><td>${
-      staff.mobileNumber
-    }</td><td><select name="role" id="role">
-    <option value="house_keeping">${staff.role}</option>
-    <option value="recepcionist">${
-      staff.role === "recepcionist" ? "house_keeping" : "recepcionist"
-    }</option>
-
-  </select></td><td>${
-    staff.address
-  }</td><td><i class="fa-solid fa-trash"></i></td><td><button type="button" class="new-task-button">New Task</button></td></tr>`
-);
-let task_html_array = Task_Array.map(
-  (task) =>
-    `<tr><td>${task.staff.name}</td><td>${task.description}</td><td>${task.dueDate}</td><td><i class="fa-solid fa-trash"></i></td></tr>`
-);
-
-document.querySelector("#staff-table tbody").innerHTML =
-  staff_html_array.join("");
-document.querySelector("#task-table tbody").innerHTML =
-  task_html_array.join("");
 
 function edit(index) {
   Staff_Array[index].role =
@@ -189,9 +228,19 @@ function deleteStaff(e) {
   console.log(e.target.parentElement.parentElement);
   let index = e.target.parentElement.parentElement.rowIndex;
   if (index) {
+    let deleted_Staff = Staff_Array[index - 1];
     Staff_Array.splice(index - 1, 1);
     document.getElementById("staff-table").deleteRow(index);
     console.log(Staff_Array);
+    //remove all tasks assigned to this staff
+    for (let i = 0; i < Task_Array.length; i++) {
+      if (Task_Array[i].staff.name === deleted_Staff.name) {
+        //  indices.push(i);
+        Task_Array.splice(i, 1);
+        document.getElementById("task-table").deleteRow(i + 1);
+        i--;
+      }
+    }
   }
 }
 function deleteTask(e) {
