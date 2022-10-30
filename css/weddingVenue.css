@@ -67,7 +67,7 @@ body{
    padding-top: 1.75%;
 }
 
-.weddingContactus a:hover{
+.weddingContactus a{
     color: white ;
     text-decoration: none;
  }
