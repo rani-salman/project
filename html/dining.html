@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/diningStyles.css" />
   </head>
   <body>
+    <div id="navigation"></div>
     <div class="first">
       <p>Dining</p>
       <h1>ARABESQUE</h1>
@@ -60,5 +61,11 @@
         >BEVERAGE &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&rarr;</a
       >
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#navigation").load("navbar.html");
+      });
+    </script>
   </body>
 </html>
