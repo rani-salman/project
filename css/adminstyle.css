@@ -262,7 +262,8 @@ body {
 .home .Grid__Container .pending-requests,
 .home .Grid__Container .rooms-status,
 .home .Grid__Container .staff-information,
-.home .Grid__Container .tasks {
+.home .Grid__Container .tasks ,
+.home .Grid__Container .staff-ratings{
   grid-column-start: 1;
   grid-column-end: 5;
   height: 160px;
@@ -315,7 +316,8 @@ body {
 .home .Grid__Container .pending-requests,
 .home .Grid__Container .staff-information,
 .home .Grid__Container .rooms-status,
-.home .Grid__Container .tasks {
+.home .Grid__Container .tasks ,
+.home .Grid__Container .staff-ratings{
     grid-column-start: 1;
     grid-column-end: 2;
   }
