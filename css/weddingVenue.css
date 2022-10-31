@@ -84,8 +84,6 @@ body{
     font-size: 14px;
     height: 2%;
     width: 23%;
-    /* left: 4%; */
-    /* margin-top: 1.8%; */
     font-family: "Neue Helvetica", helvetica, sans-serif;
  }
 .btn-1:hover{
@@ -100,7 +98,7 @@ body{
 }
 
 .weddingVenueTypes p {
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 60%;
     padding-right: 15%;
     font-size: 20px;
@@ -136,7 +134,7 @@ body{
 }
 
 .weddingVenueTypes2 p {
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 17%;
     font-size: 20px;
     padding-right: 60%;

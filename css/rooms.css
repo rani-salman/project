@@ -71,6 +71,11 @@ body{
     color: black;
     font-weight: 200;
 }
+a{
+    text-decoration: none;
+    color: black;
+
+}
 
 /* .column {
     float: left;

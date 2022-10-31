@@ -206,6 +206,7 @@ ul{
     width: 70%;
     font-family: Neue Helvetica,helvetica,sans-serif;
     font-style: normal;
+    text-align: justify;
 }
     
 
@@ -426,4 +427,6 @@ line-height: 1.3333333333em;
 }
 
 
-  
+.card-img-top{
+    height: 200px;
+}

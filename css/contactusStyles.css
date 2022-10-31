@@ -4,6 +4,7 @@
   text-align: center;
   height: 580px;
   width: 100%;
+  padding-top: 50px;
 }
 .container2{
   margin-top: 200px;
@@ -25,7 +26,7 @@ body{
     margin-top: 0;
 
 }
-h1{
+body.h1{
   text-align: center;
   font-family: "Century Gothic",SANS-SERIF;
   font-weight: 100;
@@ -39,7 +40,7 @@ h1{
 .container2 h1{
   color: black;
 }
-a{
+body.a{
   display: inline-block;
   font-family: Neue Helvetica,helvetica,sans-serif;
   font-size: .75rem;
@@ -51,6 +52,7 @@ a{
   text-decoration: none;
   border: 0;
   border-bottom: 1px solid #fff;
+  margin-left: -1000px !important;
 }
 .p2{
   padding-top: 20px;
@@ -65,7 +67,7 @@ a{
   color: white;
 
 }
-hr{
+.lines{
   width: 55%;
   border: 0;
   border-bottom: 1px solid white;
@@ -109,13 +111,14 @@ textarea{
   letter-spacing: .2em;
   line-height: 1.33em;
   color: white;
+  margin-left: -100px;
 }
 .p6{
-  padding-right: 400px;
+  padding-right: 410px;
 }
 .p5{
-  padding-right: 460px;
+  padding-right: 400px;
 }
 .p4{
-  padding-right: 440px;
+  padding-right: 400px;
 }

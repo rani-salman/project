@@ -2,25 +2,19 @@ section{
   display: flex;
 }
 .createProfileForm{
-
-  width: 50%;
+  width: 40%;
 }
 .createProfileImg img{
   position: sticky;
   top: 0;
-  margin-left: 150px;
+  margin-left: 90px;
   width: 500px;
-  height: 573px;
+  height: 100%;
   padding: 0;
-
-
-
 }
 
 .createProfileForm{
   padding-top: 50px;
-  padding-left: 50px;
-
   margin-left: 100px;
 }
 

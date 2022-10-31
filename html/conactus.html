@@ -5,21 +5,22 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="../css/contactusStyles.css">
   </head>
+  <div id="navigation"></div>
   <body>
-
+    
     <div class="container1">
       <p class="p1">Palm Spring Hotels and Resorts</p>
 
       <h1>CONTACT US</h1>
-      <hr>
+      <hr class="lines">
       <div class="">
 
       <p class="p6 p2">ADDRESS</p>
       <p class="p3">MARTYR'S SQUARE, BEIRUT</p>
-      <hr>
+      <hr class="lines">
       <p class="p4 p2">RESERVATIONS</p>
       <a href="tel:96101555777">+961 01 555 777</a>
-      <hr>
+      <hr class="lines">
       <p class="p5 p2">FRONT DESK</p>
       <a href="tel:96101555723">+961 01 555 723</a>
 
@@ -46,6 +47,13 @@
       </form>
 
     </div>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#navigation").load("navbar.html");
+      });
+    </script>
   </body>
+ 
 </html>

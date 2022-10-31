@@ -2,24 +2,16 @@ section{
   display: flex;
 }
 .signin{
-
   width: 50%;
 }
 .createProfileImg img{
   position: sticky;
-  top: 0;
   margin-left: 150px;
   width: 500px;
-  height: 573px;
-  padding: 0;
-
-
-
+  height: 100%;
 }
 .signin{
-  padding-top: 50px;
   padding-left: 50px;
-
   margin-left: 100px;
 }
 
@@ -41,7 +33,6 @@ section{
 body{
   text-align: center;
   font-family: "Century Gothic",SANS-SERIF;
-
   margin: 0;
   padding: 0;
 }
