@@ -16,6 +16,9 @@ section{
     padding-left: 30px;
     margin-left: 100px;
   }
+  .red{
+    color: red;
+  }
   
   .createProfileForm h1{
       color:black;

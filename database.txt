@@ -1,0 +1,16 @@
+COMMANDS FOR MONGO DB
+use HotelDatabase
+db.createCollection("Order")
+db.createCollection("Payments")
+db.createCollection("Customer_Concern")
+db.createCollection("Book")
+db.createCollection("Reserve")
+db.createCollection("Customer")
+db.createCollection("Staff")
+db.createCollection("Admin")
+db.createCollection("Room")
+db.createCollection("Meal")
+db.createCollection("Table")
+db.createCollection("Task")
+db.Admin.insert([{name:'ali youssef solh',username:'ali_solh',password:'Ali1'}])
+Note that you can insert an admin with ur choice , once admin inserted, sign in through html/homePage.html to the admin page, add rooms, table and staff and then you can test the other features of website consequently
